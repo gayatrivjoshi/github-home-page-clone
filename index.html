@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title></title>
+    <link rel="stylesheet" href="styles/styles.css">
+    <script src="https://kit.fontawesome.com/eb4d56eab3.js" crossorigin="anonymous"></script>
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
+</head>
+
+<body>
+    <header>
+        <nav>
+            <ul class="navigation-bar">
+                <li class="nav-item-1"><i class="icon fab fa-github" ></i></li>
+                <li class="nav-item"><a href="#">Features</a></li>
+                <li class="nav-item"><a href="#">Business</a></li>
+                <li class="nav-item"><a href="#">Explore</a></li>
+                <li class="nav-item"><a href="#">Marketplace</a></li>
+                <li class="nav-item"><a href="#">Pricing</a></li>
+                <li class="nav-item"><input type="text" placeholder="Search Github" class="nav-search-box"></li>
+                <li class="nav-item"><a href="#">Sign in <span> or</span> Sign up</a></li>
+                <li class="ham-icon">
+                    <div class="ham-icon-line"></div>
+                    <div class="ham-icon-line"></div>
+                    <div class="ham-icon-line"></div>
+                </li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <div class="flex-container">
+            <div class="child1">
+                <h1 class="built-heading">Built for developers</h1>
+                <p class="about-github-text">Github is a development platform inspired by the way you work. From <span class="open-source">open source</span> to
+                    <span class="business">business</span>
+                    you can host and review code,manage projects, and build software alongside millions of other
+                    developers.
+                </p>
+            </div>
+            <div class="child2">
+                <form class="sign-up-form">
+                    <label for="username" id="label-username">Username</label>
+                    <input type="text" id="username" name="username" placeholder="Pick a username"><br>
+                    <label for="email" class="label-email">Email</label>
+                    <input type="text" id="email" name="email" placeholder="you@example.com"><br>
+                    <label for="pwd" class="label-pwd">Password</label>
+                    <input type="password" id="pwd" name="pwd" placeholder="Create a password"><br>
+                    <p class="form-text">Use atleast one letter, one numeral and several characters</p>
+                    <input type="submit" value="Sign up for Github" class="sign-up"><br>
+                    <p class="form-text">By clicking "Sign up for Github", you agree to our <span class="terms-privacy"> terms of service</span> and <span class="terms-privacy">privacy policy</span>. We'll ocassionally send you account related emails.</p>
+                </form>
+                <div>
+                    <input type="submit" value="Sign up for Github" class="sign-up-mobile">
+                </div>
+            </div>
+        </div>
+        <div class="item">
+            <h5 class="github-for-teams">Github for Teams</h5>
+            <p class="item-title">A better way to work together.</p>
+            <p class="github-message">GitHub brings teams together to work through problems, move ideas forward, and learn from each other
+                along the way.</p>
+            <input type="submit" class="sign-up-team" value="Sign up your team">
+        </div>
+    </main>
+</body>
+
+</html>

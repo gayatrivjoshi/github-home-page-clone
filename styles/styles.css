@@ -1,0 +1,331 @@
+ *{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    /* border: 2px solid red; */
+}
+@font-face{
+    font-family: "segeo";
+    src:url("../fonts/Segoe\ UI.ttf") ;
+}
+a{
+    text-decoration: none;
+    color: white;
+}
+  span {
+    color: rgb(117, 119, 121);
+  }
+  .icon{
+      color: white;
+      font-size: 40px;
+  }
+  .navigation-bar {
+        display: flex;
+        list-style-type:none ;  
+        justify-content: center; 
+        background-color: #24292e;
+        align-content: center;
+  }
+  .nav-item , .nav-item-1 {
+      font-size: 20px;
+      margin: 10px;
+      padding: 5px;
+      display: flex;
+      justify-content: center;
+      align-content: center;
+      font-family: "segeo";    
+  }
+
+  .nav-item > a{
+      margin: auto;
+  }
+.nav-search-box{
+    height: 20px;
+    margin: auto;
+    border-radius: 3px;
+    color: #ffffff;
+    background-color: #FFFFFF20;
+    border: none;
+    margin-left: 200px;
+}
+.ham-icon{
+    display: none;
+}
+.flex-container{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    width: 100%;
+    align-items: center;
+    background: url(../images/simple-codelines.svg), #2b3137;
+}
+
+.child1{
+    font-size: 20px;
+    width: 40%;
+    display: flex;
+    justify-content: left;
+    flex-direction: column;
+    padding: 50px;
+    margin: 25px;
+    margin-left: 200px;
+    color: white;
+}
+
+.child2{
+    width: 50%;
+    display: flex;
+    justify-content: left;
+    flex-direction: column;
+    padding: 50px;
+    margin: 25px;
+    font-family: -apple-system,BlinkMacSystemFont,"Segoe UI",Helvetica,Arial,sans-serif,"Apple Color Emoji","Segoe UI Emoji","Segoe UI Symbol";
+}
+
+.built-heading{
+    font-family: 'Roboto', sans-serif;
+    font-size: 60px;
+    font-weight: 100;
+}
+.about-github-text{
+    font-family: "segeo";
+    font-size: 26px; 
+    color: rgba(255,255,255,0.6);
+}
+.open-source{
+    color: white; 
+    text-decoration:  1px underline solid rgb(148, 147, 147); 
+    cursor: pointer;     
+}
+.business{
+    color: white;
+    text-decoration:  1px underline solid rgb(148, 147, 147);
+    cursor: pointer;
+}
+.sign-up-form{
+    color: #586069;
+    background-color: white;
+    width: 60%;
+    padding: 15px;
+    border-radius: 5px;
+}
+
+label{
+    display: block;
+    width: 100%;
+    padding: 5px;
+    margin-bottom: 5px;
+    
+}
+input{
+    width: 100%;
+    padding: 13px;
+    margin-bottom: 10px;
+    box-shadow: inset 0 1px 2px rgb(27 31 35 / 8%);
+    border: 1px solid #d1d5da;
+    border-radius: 2px;
+    background-color: #fafbfc;
+}
+.sign-up{
+     border: none;
+     padding: 12px 50px;
+     text-decoration: none;
+     margin: 4px 2px;
+     cursor: pointer;
+     color: #fff;
+     background-color: #28a745;
+     background-image: linear-gradient(-180deg, #34d058 0%, #28a745 90%);
+}
+.sign-up-mobile{
+    display: none;
+}
+.form-text{
+    color:#6a737d;
+    text-align: center;
+    font-size: 12px;
+}
+
+.terms-privacy{
+    color: #0366d6;
+}
+.item{
+    font-family: 'Roboto', sans-serif;
+    text-align: center;        
+}
+.github-for-teams{
+    font-weight: 400;
+    font-size: 16px;
+    color: #586069;
+    margin-top: 65px;
+    margin-bottom: 25px;
+}
+.item-title{
+    font-size: 54px;
+    font-weight: 1; 
+    color: #24292e; 
+    margin-bottom: 15px;
+    line-height: 67.5px;
+    font-family: "segeo";
+}
+
+.github-message{
+    font-size: 20px;
+    font-weight: 100;
+    color: #586069;
+    width: 45%;
+    margin: auto;
+    font-family: "segeo";
+}
+
+.sign-up-team{
+    color: #0366d6;
+    background-color: #fff;
+    width: 200px;
+    cursor: pointer;
+    margin-top: 30px;
+    border-radius: 5px;
+    font-weight: 600;
+    font-size: 16px;
+}
+.sign-up-team:hover{
+    background-color: #0366d6;
+    color: #fff;
+}
+#username:focus,#email:focus,#pwd:focus{
+    outline: none;
+    border: 1px solid #0366d6;
+}
+#username::placeholder,#email::placeholder,#pwd::placeholder{
+    color: rgb(148, 147, 147);
+}
+/* Media queries for ipads and tablets */
+ @media (max-width: 768px) {
+            .navigation-bar{
+                width: 100vw;
+            }
+            .icon{
+                font-size: 30px;
+                justify-content: left;
+            }
+            .nav-item{
+                display: none;
+            }
+            .ham-icon{
+                display: block;
+                margin: auto;
+                margin-left: 629px;
+                margin-right: 3px;
+            }
+            .ham-icon-line{
+                display: block;
+                 width: 35px;
+                 height: 4px;
+                 background-color:white;
+                 margin: 6px 0;
+            }
+            .flex-container{
+                width: 100vw;
+                flex-direction: column;  
+            }
+            .child1{
+                width: 100vw;
+                margin: auto;
+                padding-bottom: 0px;
+            }
+            .built-heading{
+                font-size: 40px;
+                text-align: center;
+                margin: auto;
+                margin-bottom: 17px;
+            }
+            .about-github-text{
+                font-size: 20px;
+                text-align: center;
+                margin: auto;
+            }
+            .child2{
+                width: 100vw;
+                margin: auto;
+                justify-content: center;
+                align-items: center;
+            }
+            .sign-up-form{
+                width: 60vw;
+            }
+            .item{
+                width: 100vw;
+                margin: auto;
+            }
+            .github-for-teams{
+                font-size: 18px;
+                margin-top: 30px;
+                margin-bottom: 0px;
+
+            }
+            .item-title{
+                font-size: 29px;
+                line-height: none;
+                margin-top: 10px;
+                margin-bottom: none;
+            }
+            .github-message{
+                font-size: 20px;
+                width: 72vw;
+            }
+        }
+        
+ /* Media Query for Mobile Devices */
+        @media (max-width: 480px) {
+            .icon{
+                font-size: 20px;
+                margin-left: 0px;
+            }
+            .ham-icon{
+                margin-left: 275px;
+            }
+
+            .ham-icon-line{
+                width: 25px;
+                height: 2px;
+            }
+
+            .built-heading{
+                font-size: 35px;
+            }
+            .about-github-text{
+                font-size: 15px;
+                margin-top:none;
+            }
+            .child1{
+                padding-top: 25px;
+            }
+            .child2{
+                padding-top: 20px;
+                padding-bottom: 20px;
+            }
+            .sign-up-form{
+                display: none;
+            }
+            .sign-up-mobile{
+                display: block;
+                border: none;
+                padding: 12px 50px;
+                text-decoration: none;
+                margin: 4px 2px;
+                cursor: pointer;
+                color: #fff;
+                background-color: #28a745;
+                background-image: linear-gradient(-180deg, #34d058 0%, #28a745 90%);
+            }
+            .github-for-teams{
+                font-size: 15px;
+            }
+            .item-title{
+                font-size: 30px;
+            }
+            .github-message{
+                font-size: 15px;
+                width: 82vw;
+            }
+
+        }
